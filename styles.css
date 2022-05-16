@@ -1,0 +1,285 @@
+/* Global Layout Set-up */
+ * {
+     box-sizing: border-box;
+}
+ body {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
+     color: #fff;
+     background: #008080;
+}
+/* Link Styles */
+ a {
+     text-decoration: none;
+     color: #999;
+}
+ a:hover {
+     color: #6633ff;
+}
+/* Section Styles */
+ .main-nav {
+     width: 100%;
+     background: #000;
+     min-height: 30px;
+     padding: 10px;
+     position: fixed;
+     text-align: center;
+     color: #008080;
+}
+ .nav {
+     display: flex;
+     justify-content: space-around;
+     font-weight: 700;
+     list-style-type: none;
+     margin: 0 auto;
+     padding: 0;
+}
+ .nav .current {
+     border-bottom: 2px solid #fff;
+     color: #fff;
+}
+ .nav .name {
+     display: block;
+     margin-right: auto;
+}
+ .nav li {
+     padding: 5px 10px 10px 10px;
+}
+ .nav a {
+     transition: all .5s;
+     color: #008080;
+     text-transform: uppercase;
+}
+ .nav a:hover {
+     color: white;
+     border-bottom: 2px solid #008080;
+}
+ header {
+     text-align: center;
+     background: url('images/phoenix-az-landscape.jpg') no-repeat bottom center ;
+     background-size: cover;
+     overflow: hidden;
+     padding-top: 60px;
+}
+ header {
+     line-height: 1.5;
+}
+ header .profile-image {
+     margin-top: 50px;
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     border: 3px solid white;
+     transition: all .7s;
+}
+ header .profile-image:hover {
+     transform: scale(1.1) rotate(360deg);
+}
+ .tag {
+     background-color: #1D8080;
+     color: #fff;
+     padding: 10px;
+     border-radius: 5px;
+     display: table;
+     margin: 10px auto;
+}
+ .tag.name {
+     text-transform: uppercase;
+}
+ .location {
+     background-color: #fff;
+     color: #1D8080;
+     font-variant: small-caps;
+     font-weight: 900;
+}
+ .card {
+     margin: 30px;
+     padding: 20px 40px 40px;
+     max-width: 500px;
+     text-align: left;
+     background: #fff;
+     box-shadow: 10px 10px 50px #015152;
+     border-radius: 6px;
+     transition: all .5s;
+     color: #008080;
+}
+ .card.background {
+     background-image: url("images/source-code.jpg");
+     background-color: #cccccc;
+     background-repeat: no-repeat;
+     background-size: cover ;
+}
+ .card.goals {
+     background-image: url("images/source-code.jpg");
+     background-color: #cccccc;
+     background-repeat: no-repeat;
+     background-size: cover ;
+}
+ .white-bg {
+     background-color: rgba(255, 255,255, 0.85);
+     padding: 1em;
+     border-radius: 25px;
+}
+ .card:hover, .experience:hover {
+     box-shadow: 10px 10px 50px #00B3B3;
+}
+ ul.skills {
+     padding: 0;
+     text-align: center;
+}
+ .skills li {
+     border-radius: 6px;
+     display: inline-block;
+     background: #008040;
+     color: white;
+     padding: 5px 15px;
+     margin: 2px;
+     text-align: center 
+}
+ .skills li:nth-child(odd) {
+     background: #004080;
+}
+/*Skills Page*/
+ .skills-page {
+     max-width: 60%;
+     margin: auto;
+     text-align: center 
+}
+ .skill-div {
+     width: 100%;
+     background-color: #ddd;
+     border-radius: 25px;
+}
+ .skill-item {
+     text-align: right;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 1em;
+     color: white;
+}
+ .html {
+     width: 90%;
+     background-color: #AA0441;
+}
+ .css {
+     width: 85%;
+     background-color: #F37E21;
+}
+ .php {
+     width: 70%;
+     background-color: #808080;
+}
+ .js {
+     width: 45%;
+     background-color: #36E7F4;
+}
+ footer {
+     width: 100%;
+     min-height: 30px;
+     padding: 20px 0 40px 20px;
+     color: #000;
+}
+ footer .copyright {
+     top: -8px;
+     font-size: .75em;
+}
+ footer ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+ footer ul li {
+     display: inline-block;
+}
+ a.social {
+     display: inline-block;
+     text-indent: -9999px;
+     margin-left: 5px;
+     width: 30px;
+     height: 30px;
+     background-size: 30px 30px;
+     opacity: .4;
+     transition: all .5s;
+}
+ a.twitter {
+     background-image: url(images/twitter.svg);
+}
+ a.linkedin {
+     background-image: url(images/linkedin.svg);
+}
+ a.github {
+     background-image: url(images/github.svg);
+}
+ a.social:hover {
+     opacity: 1;
+}
+ .clearfix {
+     clear: both;
+}
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+     margin-right: -15px;
+     margin-left: -15px;
+}
+ .experience {
+     margin: 30px;
+     padding: 20px 40px 40px;
+     text-align: left;
+     background: #fff;
+     box-shadow: 10px 10px 50px #015152;
+     border-radius: 6px;
+     transition: all .5s;
+     color: #008080;
+}
+ .experience h3 {
+     font-variant: small-caps;
+}
+ .experience h3,.experience h2 {
+     margin-top: 5px;
+     margin-bottom: 5px;
+}
+/* Styles for larger screens */
+ @media screen and (min-width: 720px) {
+     .flex {
+         display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+         display: flex;
+         max-width: 1200px;
+         -ms-flex-pack: distribute;
+         justify-content: space-around;
+         margin: 0 auto;
+    }
+     header {
+         min-height: 470px;
+    }
+     .nav {
+         max-width: 1200px;
+         padding: 0 30px;
+    }
+     main {
+         padding-top: 20px;
+    }
+     main p {
+         line-height: 1.6em;
+    }
+     footer {
+         font-size: 1.3em;
+         max-width: 1200px;
+         margin: 40px auto;
+    }
+     .experience {
+         width: 70%;
+         margin: 30px;
+         padding: 20px 40px 40px;
+         text-align: left;
+         background: #fff;
+         box-shadow: 10px 10px 50px #015152;
+         border-radius: 6px;
+         transition: all .5s;
+         color: #008080;
+    }
+}
+ 
